@@ -1,0 +1,10 @@
+^S:\VISUAL_STUDIO\02_VISUAL_STUDIO_2022_コマンドライン_コンパイル\04_RADIA\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SS:/Visual_Studio/02_Visual_Studio_2022_コマンドライン_コンパイル/04_Radia -BS:/Visual_Studio/02_Visual_Studio_2022_コマンドライン_コンパイル/04_Radia/build --check-stamp-file S:/Visual_Studio/02_Visual_Studio_2022_コマンドライン_コンパイル/04_Radia/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
