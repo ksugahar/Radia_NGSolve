@@ -113,8 +113,6 @@ target_include_directories(rad_ngsolve PRIVATE
 
 # Add compile definitions (from Radia)
 target_compile_definitions(rad_ngsolve PRIVATE
-	WIN32
-	_WINDOWS
 	ALPHA__LIB__
 	FFTW_ENABLE_FLOAT
 	NO_TIMER
